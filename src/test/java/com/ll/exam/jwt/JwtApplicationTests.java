@@ -44,4 +44,13 @@ class JwtApplicationTests {
 
         assertThat(secretKey).isNotNull();
     }
+
+    @Test
+    @DisplayName("캐싱으로 JwtProvider 객체를 여러개 생성해도 한 번만 생성된다.")
+    void t4() {
+        SecretKey secretKey = jwtProvider.getSecretKey();
+        SecretKey secretKey1 = jwtProvider.getSecretKey();
+
+        assertThat(secretKey == secretKey1).isTrue();
+    }
 }
