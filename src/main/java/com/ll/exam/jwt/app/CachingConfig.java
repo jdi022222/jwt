@@ -1,4 +1,4 @@
-package com.ll.exam.jwt;
+package com.ll.exam.jwt.app;
 
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;

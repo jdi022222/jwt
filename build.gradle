@@ -32,6 +32,9 @@ dependencies {
 
 	/* 캐싱 관련 */
 	implementation 'org.springframework.boot:spring-boot-starter-cache'
+
+	/* 시큐리티 관련 */
+	implementation 'org.springframework.boot:spring-boot-starter-security'
 }
 
 tasks.named('test') {
